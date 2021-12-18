@@ -144,7 +144,6 @@ section .title::before {
 .skills .skills-content,
 .contact .contact-content,
 .education .about-content,
-.projects .project-item,
 .work-experience .job-item {
   display: flex;
   flex-wrap: wrap;
@@ -353,6 +352,10 @@ section .title::before {
   font-weight: 700;
   color: black;
   padding: 45 px;
+}
+.projects .project-item {
+  align-items: center;
+  justify-content: space-between;
 }
 /* */
 
@@ -620,6 +623,15 @@ footer {
   .skills .skills-content .column {
     width: 100%;
   }
+
+  .project-item {
+    overflow: hidden;
+    /* grid-template-columns: 1fr 2fr; */
+    column-gap: 19 px;
+    padding: 25 px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 500px) {
@@ -629,12 +641,7 @@ footer {
   .home .about .intro2 {
     font-size: 27px;
   }
-  .project-item {
-    overflow: hidden;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 19 px;
-    padding: 25 px;
-  }
+
   .project-item .img {
     height: 350 px;
     width: 350 px;
