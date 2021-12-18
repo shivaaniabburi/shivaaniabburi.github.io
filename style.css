@@ -188,8 +188,8 @@ section .title::before {
 }
 
 .abtsec .about-content .right a:hover {
-  color: chocolate;
-  background: none;
+  /* color: chocolate; */
+  background: #30323d;
 }
 
 /* EXPERIENCE STYLING   */
@@ -391,7 +391,7 @@ section .title::before {
   display: inline-block;
 } */
 .projects .btn:hover {
-  background: rgba(47, 48, 97, 80%);
+  background: #30323d;
 }
 .project-item {
   overflow: hidden;
