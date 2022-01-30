@@ -280,16 +280,16 @@ section .title::before {
   width: 90%;
 }
 .skills .skills-content .left .java::before {
-  width: 60%;
-}
-.skills .skills-content .left .python::before {
   width: 80%;
 }
+.skills .skills-content .left .python::before {
+  width: 60%;
+}
 .skills .skills-content .left .html::before {
-  width: 50%;
+  width: 100%;
 }
 .skills .skills-content .left .css::before {
-  width: 70%;
+  width: 100%;
 }
 
 /* right half column of skills  */
@@ -320,7 +320,7 @@ section .title::before {
   content: "";
   position: absolute;
   height: 100%;
-  width: 80%;
+  width: 90%;
   left: 0;
   top: 0;
   background: #a63c06;
@@ -330,13 +330,13 @@ section .title::before {
   width: 90%;
 }
 .skills .skills-content .right .sql::before {
-  width: 60%;
+  width: 100%;
 }
 .skills .skills-content .right .react::before {
   width: 80%;
 }
 .skills .skills-content .right .node::before {
-  width: 50%;
+  width: 70%;
 }
 .skills .skills-content .right .express::before {
   width: 70%;
@@ -522,8 +522,10 @@ footer {
   padding: 0;
   display: flex;
   justify-content: center;
+  background: #30323d;
 }
 .contact-list a {
+  font-size: 30px;
   padding: 15px;
   display: inline-block;
   color: white;
