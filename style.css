@@ -10,7 +10,7 @@ h3 {
   margin-bottom: 0;
 }
 .max-width {
-  max-width: 1300px;
+  max-width: 1179px;
   padding: 0 80px;
   margin: auto;
 }
@@ -111,7 +111,7 @@ section .title::before {
 /* ABOUT SECTION  */
 
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .abtsec,
 .skills,
@@ -194,18 +194,6 @@ section .title::before {
 
 /* EXPERIENCE STYLING   */
 
-.work-experience {
-  background: #dab25e;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: black;
-}
-
-.work-experience h3 {
-  font-size: 30px;
-}
-
 .work-experience h2 {
   font-size: 40px;
   position: relative;
@@ -216,10 +204,6 @@ section .title::before {
   padding-bottom: 20px;
   font-family: "Open Sans", sans-serif;
 }
-.work-experience p {
-  text-align: justify;
-}
-
 .work-experience h2::before {
   content: "";
   position: absolute;
@@ -231,12 +215,113 @@ section .title::before {
   transform: translateX(-50%);
 }
 
-.job-item {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 20px;
-  padding: 25px;
+.timeline {
+  background-color: #dab25e;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline h1 {
+  font-size: 35px;
+}
+.timeline h2 {
+  font-size: 30px;
+  margin: 0px 0px 0px 40px;
+  /* text-decoration: none; */
+}
+
+.timeline h2 .line::before {
+  text-decoration: none;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.container .left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 20px 30px;
+  background-color: #a63c06;
+  color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
 /* ----------------------------------------------------------------------------- */
 /* SKILLS STYLING  */
 
@@ -280,16 +365,16 @@ section .title::before {
   width: 90%;
 }
 .skills .skills-content .left .java::before {
-  width: 80%;
+  width: 70%;
 }
 .skills .skills-content .left .python::before {
   width: 60%;
 }
 .skills .skills-content .left .html::before {
-  width: 100%;
+  width: 90%;
 }
 .skills .skills-content .left .css::before {
-  width: 100%;
+  width: 90%;
 }
 
 /* right half column of skills  */
@@ -327,19 +412,19 @@ section .title::before {
 }
 
 .skills .skills-content .right .js::before {
-  width: 90%;
-}
-.skills .skills-content .right .sql::before {
-  width: 100%;
-}
-.skills .skills-content .right .react::before {
   width: 80%;
 }
+.skills .skills-content .right .sql::before {
+  width: 90%;
+}
+.skills .skills-content .right .react::before {
+  width: 60%;
+}
 .skills .skills-content .right .node::before {
-  width: 70%;
+  width: 60%;
 }
 .skills .skills-content .right .express::before {
-  width: 70%;
+  width: 60%;
 }
 /* ----------------------------------------------------------------------------------------------------- */
 
@@ -474,6 +559,13 @@ section .title::before {
 
 .contact {
   background-color: #dab25e;
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
 }
 .contact .contact-content .column {
   width: auto;
