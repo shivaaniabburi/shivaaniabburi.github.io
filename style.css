@@ -326,6 +326,23 @@ section .title::before {
 /* ----------------------------------------------------------------------------- */
 /* SKILLS STYLING  */
 
+.skills .skills-content .skillsColumn .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 20px;
+  padding: 14px;
+}
+.skills .skills-content .skillsColumn h2 {
+  /* font-size: 50px; */
+  font-weight: bold;
+}
+.skills .skills-content .skillsColumn .info span {
+  font-size: 44px;
+}
 .skills .skills-content .column {
   width: 40%;
 }
