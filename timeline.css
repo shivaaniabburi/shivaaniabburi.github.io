@@ -6,28 +6,6 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-body {
-  /* The image used */
-  background-image: url("img/purple3.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-canvas.particles-js-canvas-el {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: -1000;
-  margin: 0px;
-}
 h3 {
   margin-bottom: 0;
 }
@@ -61,7 +39,7 @@ section .title::before {
 
 .navbar.sticky {
   padding: 15px 0;
-  background: #4c5447;
+  background: #30323d;
 }
 
 .navbar .max-width {
@@ -71,7 +49,7 @@ section .title::before {
 }
 
 .navbar .logo a {
-  font-size: 49px;
+  font-size: 65px;
   font-weight: 500;
   color: #fff;
 }
@@ -83,7 +61,7 @@ section .title::before {
 
 .navbar .menu li a {
   color: #fff;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s ease;
@@ -106,30 +84,25 @@ section .title::before {
 
 .home {
   display: flex;
-  /* background: url("img/background-home.jpg") no-repeat center; */
+  background: url("img/background-home.jpg") no-repeat center;
   height: 100vh;
   min-height: 500px;
-  background-size: cover;
-  background-attachment: fixed;
   font-family: "Baloo Bhai 2", cursive;
 }
 
 .home .max-width {
-  /* margin: auto 0 auto 40px; */
+  margin: auto 0 auto 40px;
   color: #fff;
-  position: absolute;
-  top: 192px;
-  right: 86px;
 }
 
 .home .about .intro1 {
-  font-size: 57px;
+  font-size: 75px;
   font-weight: 600;
-  margin-left: 427px;
+  margin-left: -15px;
 }
 .home .about .intro2 {
   font-size: 40px;
-  margin-left: 427px;
+  margin-left: -15px;
 }
 /* .home .about .intro3 {
   font-size: 27px;
@@ -138,7 +111,7 @@ section .title::before {
 /* ABOUT SECTION  */
 
 section {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 .abtsec,
 .skills,
@@ -155,7 +128,6 @@ section .title {
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family: "Open Sans", sans-serif;
-  color: white;
 }
 
 section .title::before {
@@ -165,7 +137,7 @@ section .title::before {
   left: 50%;
   width: 248px;
   height: 3px;
-  background: white;
+  background: #111;
   transform: translateX(-50%);
 }
 .abtsec .about-content,
@@ -178,55 +150,33 @@ section .title::before {
   align-items: center;
   justify-content: space-between;
 }
-
-.abtsec {
-  margin: 90px 0 0 auto;
+.abtsec .about-content .left {
+  width: 45%;
 }
-.abtsec .about-content .Left {
-  width: 40%;
-}
-.abtsec .about-content .Left img {
+.abtsec .about-content .left img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
 
-.abtsec .about-content .Right {
-  width: 54%;
+.abtsec .about-content .right {
+  width: 45%;
 }
 
-.abtsec .about-content .Right .text {
-  font-size: 50px;
+.abtsec .about-content .right .text {
+  font-size: 35px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: white;
 }
-.abtsec .about-content .Right .intro1 {
-  font-size: 57px;
-  font-weight: 600;
-  color: white;
-  font-family: "Baloo Bhai 2", cursive;
-  /* margin-left: 427px; */
-  width: 900px;
-}
-.abtsec .about-content .Right .intro2 {
-  font-size: 40px;
-  font-weight: 600;
-  color: white;
-  font-family: "Baloo Bhai 2", cursive;
-  /* margin-left: 427px; */
-  width: 900px;
-}
-.abtsec .about-content .Right p {
+
+.abtsec .about-content .right p {
   text-align: justify;
   font-weight: 700;
-  font-size: 22px;
-  color: white;
 }
-.abtsec .about-content .Right a {
+.abtsec .about-content .right a {
   display: inline-block;
-  background-color: #f58a07;
+  background-color: #a63c06;
   color: #fff;
   font-size: 35px;
   font-weight: 500;
@@ -237,9 +187,9 @@ section .title::before {
   transition: all 0.3s ease;
 }
 
-.abtsec .about-content .Right a:hover {
+.abtsec .about-content .right a:hover {
   /* color: chocolate; */
-  background: rgb(166, 60, 6);
+  background: #30323d;
 }
 
 /* EXPERIENCE STYLING   */
@@ -253,7 +203,6 @@ section .title::before {
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family: "Open Sans", sans-serif;
-  color: white;
 }
 .work-experience h2::before {
   content: "";
@@ -262,12 +211,12 @@ section .title::before {
   left: 50%;
   width: 343px;
   height: 3px;
-  background: white;
+  background: #111;
   transform: translateX(-50%);
 }
 
 .timeline {
-  background-color: #cecccc;
+  background-color: #dab25e;
   font-family: "Open Sans", sans-serif;
   position: relative;
   max-width: 1200px;
@@ -315,7 +264,7 @@ section .title::before {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #341948;
+  border: 4px solid #ff9f55;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -367,7 +316,7 @@ section .title::before {
 /* The actual content */
 .timeline-content {
   padding: 20px 30px;
-  background-color: #4c0134;
+  background-color: #a63c06;
   color: white;
   position: relative;
   border-radius: 6px;
@@ -376,25 +325,6 @@ section .title::before {
 /* ----------------------------------------------------------------------------- */
 /* SKILLS STYLING  */
 
-.skills .skills-content .skillsColumn .info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  column-gap: 20px;
-  padding: 14px;
-}
-.skills .skills-content .skillsColumn h2 {
-  /* font-size: 50px; */
-  font-weight: bold;
-  color: white;
-}
-.skills .skills-content .skillsColumn .info span {
-  font-size: 44px;
-  color: white;
-}
 .skills .skills-content .column {
   width: 40%;
 }
@@ -435,16 +365,16 @@ section .title::before {
   width: 90%;
 }
 .skills .skills-content .left .java::before {
-  width: 70%;
+  width: 80%;
 }
 .skills .skills-content .left .python::before {
   width: 60%;
 }
 .skills .skills-content .left .html::before {
-  width: 90%;
+  width: 100%;
 }
 .skills .skills-content .left .css::before {
-  width: 90%;
+  width: 100%;
 }
 
 /* right half column of skills  */
@@ -482,111 +412,47 @@ section .title::before {
 }
 
 .skills .skills-content .right .js::before {
-  width: 80%;
-}
-.skills .skills-content .right .sql::before {
   width: 90%;
 }
+.skills .skills-content .right .sql::before {
+  width: 100%;
+}
 .skills .skills-content .right .react::before {
-  width: 60%;
+  width: 80%;
 }
 .skills .skills-content .right .node::before {
-  width: 60%;
+  width: 70%;
 }
 .skills .skills-content .right .express::before {
-  width: 60%;
+  width: 70%;
 }
 /* ----------------------------------------------------------------------------------------------------- */
 
 /* PROJECT STYLING  */
 
 .projects {
-  background: #cecccc;
+  background: #dab25e;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: black;
   padding: 45 px;
-  position: relative;
-  max-width: 1019px;
-  margin: 0 auto;
-}
-
-.projects .box-title {
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 6000;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
-  color: black;
-}
-
-.projects .box-title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 248px;
-  height: 3px;
-  background: black;
-  transform: translateX(-50%);
-}
-
-.projects h2::before {
-  color: black;
 }
 .projects .project-item {
   align-items: center;
   justify-content: space-between;
 }
+/* */
 
 .projects .project-item .project-summary p {
   font-weight: 1000;
 }
 .project-summary {
   text-align: justify;
-  float: right;
 }
-.project-item .Todo {
-  float: left;
-  margin-right: 20px;
-  width: 300px;
-}
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-}
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 700px;
-  max-width: 700px;
-}
-
-.zoomTodo {
-  transition: transform 0.2s; /* Animation */
-}
-
-.zoomTodo:hover {
-  transform: scale(
-    1.1
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.projects .ToDobtn {
+.projects a {
   display: inline-block;
-  background-color: rgb(9, 21, 64);
+  background-color: #a63c06;
   color: #fff;
   font-size: 35px;
   font-weight: 500;
@@ -595,144 +461,22 @@ section .title::before {
   border-radius: 6px;
   border-radius: 2px solid chocolate;
   transition: all 0.3s ease;
-  width: 179px;
+  width: 300px;
   height: 60px;
 }
-
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 300px !important;
-  margin-right: 20px !important;
-  max-width: 300px !important;
-}
-
-#myImg:hover {
-  opacity: 0.7;
-}
-
-/* The Modal (background) */
-
-/* Modal Content (Image) */
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content,
-#caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 100px;
-  right: 320px;
-  color: RED;
-  font-size: 49px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-/* image slider styling */
-/* .slide {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 300px;
-  height: 245.56px;
-  overflow-x: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.slide1 {
-  background-image: url("img/JAVA1_RESIZED.png");
-}
-.slide2 {
-  background-image: url("img/ToDoList.png");
-}
-.slide3 {
-  background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/20210812221322/pic3.png");
-}
-.arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin-top: -35px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-#arrow-left {
-  border-width: 11px 9px 20px 0;
-  border-color: transparent #fff transparent transparent;
-  left: 88px;
-  margin-left: 19px;
-}
-
-#arrow-right {
-  border-width: 20px 0 20px 30px;
-  border-color: transparent transparent transparent #fff;
-  right: 0;
-  margin-right: 20px;
+/* .projects a {
+  color: #2f3061;
 } */
-
-.projects .Javabtn {
+/* .projects .btn {
+  color: #f7fff7;
+  background: #2f3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
   display: inline-block;
-  background-color: rgb(9, 21, 64);
-  color: #fff;
-  font-size: 35px;
-  font-weight: 500;
-  padding: 1px36px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border-radius: 2px solid chocolate;
-  transition: all 0.3s ease;
-  width: 255px;
-  height: 60px;
-}
-
-.projects .ToDobtn:hover {
-  background: rgb(166, 60, 6);
-}
-.projects .Javabtn:hover {
-  background: rgb(166, 60, 6);
+} */
+.projects .btn:hover {
+  background: #30323d;
 }
 .project-item {
   overflow: hidden;
@@ -741,8 +485,11 @@ section .title::before {
   column-gap: 20px;
   padding: 25px;
 }
-
-.projects .project-item h3 {
+.project-item img {
+  float: left;
+  margin-right: 20px;
+}
+.project-item h3 {
   margin-top: 0;
   font-size: 30px;
   font-weight: 1200px;
@@ -752,16 +499,14 @@ section .title::before {
 /* EDUCATION SECTION STYLING  */
 
 .education {
+  background-color: #fff;
   background-size: cover;
   background-position: top right;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: black;
   font-weight: 700;
-}
-.right {
-  color: white;
 }
 .education .text {
   font-size: 30px;
@@ -790,13 +535,11 @@ section .title::before {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: white;
 }
 
 .abtsec .about-content .right p {
   text-align: justify;
   font-weight: 700;
-  color: white;
 }
 .education h2::before {
   content: "";
@@ -805,7 +548,7 @@ section .title::before {
   left: 50%;
   width: 203px;
   height: 3px;
-  background: white;
+  background: #111;
   transform: translateX(-50%);
 }
 .education p {
@@ -815,36 +558,7 @@ section .title::before {
 /* CONTACT SECTION STYLING   */
 
 .contact {
-  background-color: #cecccc;
-  background-size: cover;
-  background-position: top right;
-  padding-bottom: 25px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  color: black;
-  font-weight: 700;
-  max-width: 1019px;
-  margin: 0 auto;
-}
-.contact .box-title {
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 6000;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  font-family: "Open Sans", sans-serif;
-  color: black;
-}
-.contact .box-title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 248px;
-  height: 3px;
-  background: black;
-  transform: translateX(-50%);
+  background-color: #dab25e;
 }
 .contact .contact-content .column {
   width: auto;
@@ -887,20 +601,13 @@ footer {
   background: #343434;
   color: #f7fff7;
   text-align: center;
-  margin: 0 auto;
-  max-width: 1019px;
-  background: #30323d;
 }
 .contact-list {
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: center;
-  background: #a63c06;
-  max-width: 1019px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+  background: #30323d;
 }
 .contact-list a {
   font-size: 30px;
@@ -917,60 +624,14 @@ footer {
   }
 }
 @media (max-width: 1104px) {
-  .abtsec .about-content .Left {
-    width: 100%;
-  }
-  .abtsec .about-content .Left img {
-    width: 100%;
-  }
-  .abtsec .about-content .Right .intro1 {
-    width: 100%;
-  }
-  .abtsec .about-content .Right .intro2 {
-    width: 100%;
-  }
-
-  .abtsec.about-content .Right p {
-    width: 100%;
+  .abtsec .about-content .left img {
+    height: 350px;
+    width: 350px;
   }
 }
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
-  }
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-
-  /* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 15px;
-  }
-
-  .abtsec .about-content .Right {
-    left: 0%;
-    width: 572px;
-  }
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
   }
 }
 
@@ -1039,11 +700,11 @@ footer {
   .max-width {
     padding: 0 23px;
   }
-  .abtsec .about-content .Right .intro1 {
+  .home .about .intro1 {
     font-size: 60px;
   }
-  .abtsec .about-content .Right .intro2 {
-    font-size: 38px;
+  .home .about .intro2 {
+    font-size: 30px;
   }
 
   .skills .skills-content .column {
@@ -1057,9 +718,6 @@ footer {
     padding: 25 px;
     display: flex;
     flex-wrap: wrap;
-  }
-  .timeline h1 {
-    width: 100%;
   }
 }
 
