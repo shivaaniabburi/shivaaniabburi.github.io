@@ -204,7 +204,7 @@ section .title::before {
 }
 .abtsec .about-content .Right .intro1 {
   font-size: 57px;
-  font-weight: 600;
+  font-weight: 100;
   color: white;
   font-family: "Baloo Bhai 2", cursive;
   /* margin-left: 427px; */
@@ -212,7 +212,7 @@ section .title::before {
 }
 .abtsec .about-content .Right .intro2 {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 100;
   color: white;
   font-family: "Baloo Bhai 2", cursive;
   /* margin-left: 427px; */
@@ -220,7 +220,7 @@ section .title::before {
 }
 .abtsec .about-content .Right p {
   text-align: justify;
-  font-weight: 700;
+  font-weight: 100;
   font-size: 22px;
   color: white;
 }
