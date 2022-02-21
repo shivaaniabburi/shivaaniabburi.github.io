@@ -270,7 +270,7 @@ section .title::before {
   background-color: #cecccc;
   font-family: "Open Sans", sans-serif;
   position: relative;
-  max-width: 1200px;
+  max-width: 1018px;
   margin: 0 auto;
 }
 
@@ -896,7 +896,7 @@ footer {
   padding: 0;
   display: flex;
   justify-content: center;
-  background: #a63c06;
+  background: #f58a07;
   max-width: 1019px;
   margin: 0 auto;
   display: flex;
