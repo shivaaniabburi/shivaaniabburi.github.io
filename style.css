@@ -787,10 +787,16 @@ section .title::before {
   width: 45%;
 }
 .abtsec .about-content .left img {
-  height: 400px;
+  /* height: 400px;
   width: 400px;
   object-fit: cover;
+  border-radius: 6px; */
+  /* object-fit: cover; */
   border-radius: 6px;
+  float: left;
+  margin-right: 20 px;
+  height: 175px;
+  width: 250px;
 }
 
 .abtsec .about-content .right {
