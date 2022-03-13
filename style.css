@@ -12,6 +12,7 @@ body {
 
   /* Full height */
   height: 100%;
+  /* width: 784px; */
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -208,7 +209,7 @@ section .title::before {
   color: white;
   font-family: "Baloo Bhai 2", cursive;
   /* margin-left: 427px; */
-  width: 900px;
+  width: 600px;
 }
 .abtsec .about-content .Right .intro2 {
   font-size: 40px;
@@ -216,7 +217,7 @@ section .title::before {
   color: white;
   font-family: "Baloo Bhai 2", cursive;
   /* margin-left: 427px; */
-  width: 900px;
+  width: 600px;
 }
 .abtsec .about-content .Right p {
   text-align: justify;
@@ -1061,10 +1062,10 @@ footer {
     padding: 0 23px;
   }
   .abtsec .about-content .Right .intro1 {
-    font-size: 60px;
+    font-size: 43px;
   }
   .abtsec .about-content .Right .intro2 {
-    font-size: 38px;
+    font-size: 30px;
   }
 
   .skills .skills-content .column {
