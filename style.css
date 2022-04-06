@@ -778,6 +778,10 @@ section .title::before {
 .education .text {
   font-size: 30px;
 }
+.education .about-content {
+  max-width: 1019px;
+  margin: 0 auto;
+}
 .education .about-content .left img {
   object-fit: cover;
   border-radius: 6px;
